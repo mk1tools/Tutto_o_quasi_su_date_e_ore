@@ -1,0 +1,53 @@
+     A*********************************************
+     A* ESEMPIO UTILIZZO CAMPI DATA/ORA/TIMESTAMP *
+     A*********************************************
+     A* www.markonetools.it (c) 2019
+     A                                      DSPSIZ(27 132 *DS3)
+     A          R FMT01
+     A                                      CA03
+     A                                      CF01
+     A                                      CF02
+     A                                      CLRL(*ALL)
+     A                                  1 47'Esempio utilizzo campi data/ora/ti-
+     A                                      mestamp'
+     A                                      DSPATR(HI)
+     A                                  3  7'Esempio utilizzo keyword DATE e TI-
+     A                                      ME'
+     A                                      DSPATR(HI)
+     A                                      COLOR(RED)
+     A                                 24 41'(c) Copyright MK1 - www.markonetoo-
+     A                                      ls.it'
+     A                                      DSPATR(HI)
+     A                                 23  2'F3=Fine'
+     A                                  4  7'Data corrente sistema (anno 4 cifr-
+     A                                      e)'
+     A                                      DSPATR(HI)
+     A                                  4 44DATE(*SYS *YY)
+     A                                      EDTCDE(Y)
+     A                                 11  7'Data (edit code W)'
+     A                                      DSPATR(HI)
+     A                                  5 44DATE(*JOB *Y)
+     A                                      EDTCDE(Y)
+     A                                  6  7'Ora corrente'
+     A                                      DSPATR(HI)
+     A                                  6 29TIME
+     A                                  7  7'Ora corrente (edtwrd)'
+     A                                      DSPATR(HI)
+     A                                  7 29TIME
+     A                                      EDTWRD('0  h&  m&  s')
+     A                                  8  7'-----------------------------------
+     A                                      -------------'
+     A                                      COLOR(TRQ)
+     A                                 10  7'Esempio utilizzo keyword EDTWRD e -
+     A                                      EDTCDE'
+     A                                      DSPATR(HI)
+     A                                      COLOR(RED)
+     A                                  5  7'Data corrente sistema (anno 4 cifr-
+     A                                      e)'
+     A                                      DSPATR(HI)
+     A            WSDAT1         6  0B 11 27EDTCDE(W)
+     A            WSDAT2         8  0B 11 37EDTCDE(W)
+     A                                 12  7'Data (edit code Y)'
+     A                                      DSPATR(HI)
+     A            WSDAT3         6  0B 12 27EDTCDE(Y)
+     A            WSDAT4         8  0B 12 37EDTCDE(Y) 

@@ -1,0 +1,16 @@
+ESEMPIO CVTDATAPI
+
+call cvtdatapi parm(' ' ' ' ' ')            
+DSPLY  Conversione da:  a: 20191116110711616
+
+call cvtdatapi parm('20191101' '*YYMD' '*DMY')
+DSPLY  Conversione da: 20191101 a: 1011119    
+
+call cvtdatapi parm('20191101' '*YYMD' '*DMYY')
+DSPLY  Conversione da: 20191101 a: 01112019    
+
+CALL CVTDATAPI PARM('20191101' '*YYMD' '*JUL')
+DSPLY  Conversione da: 20191101 a: 119305     
+
+CALL CVTDATAPI PARM('20191101' '*YYMD' '*JULL')
+DSPLY  Errore conversione: CPF1850 - *JULL     

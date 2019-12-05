@@ -1,0 +1,34 @@
+     A****************************************************************
+     A* ESEMPIO UTILIZZO KEYWORD MAPVAL
+     A****************************************************************
+     A* www.markonetools.it (c) 2019
+     A                                      DSPSIZ(27 132 *DS3)
+     A          R FMT01
+     A                                      CA03
+     A                                      CF01
+     A                                      CF02
+     A                                      CLRL(*ALL)
+     A                                  1 26'Esempio utilizzo keyword MAPVAL'
+     A                                      DSPATR(HI)
+     A                                  7 11'Data con MAPVAL (01.01.0001 --> *B-
+     A                                      LANK)'
+     A                                      DSPATR(HI)
+     A            WSDATA          L  B  7 52DATFMT(*EUR)
+     A                                      MAPVAL(('01.01.0001' *BLANK))
+     A                                  7 67'Data senza MAPVAL'
+     A                                      DSPATR(HI)
+     A            WSDAT2          L  B  7 87DATFMT(*EUR)
+     A                                  8 11'Data con MAPVAL (02.01.0001 --> *C-
+     A                                      UR)'
+     A                                      DSPATR(HI)
+     A            WSDATC          L  B  8 52DATFMT(*EUR)
+     A                                      MAPVAL(('02.01.0001' *CUR))
+     A                                  8 67'Data senza MAPVAL'
+     A                                      DSPATR(HI)
+     A            WSDAT3          L  B  8 87DATFMT(*EUR)
+     A                                 23  2'F1=Data default'
+     A                                 23 19'F2=Data corrente'
+     A                                 23 37'F3=Fine'
+     A                                 24 41'(c) Copyright MK1 - www.markonetoo-
+     A                                      ls.it'
+     A                                      DSPATR(HI) 

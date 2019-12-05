@@ -1,0 +1,51 @@
+ESEMPIO OUTPUT DEL PROGRAMMA CVALFA2DAT
+
+call cvalfa2dat parm('28/02/19' 'DD/MM/YY' 'YYYYMMDD')
+DSPLY  Data input: 28/02/19                           
+DSPLY  Formato input: DD/MM/YY                        
+DSPLY  Data output: 2019-02-28                        
+DSPLY  Formato output: YYYYMMDD                       
+DSPLY  Data riformattata: 20190228    
+
+call cvalfa2dat parm('28/02/19' 'DD/MM/YY' 'YYYYMMDD')
+DSPLY  Data input: 28/02/19                           
+DSPLY  Formato input: DD/MM/YY                        
+DSPLY  Data output: 2019-02-28                        
+DSPLY  Formato output: YYYYMMDD                       
+DSPLY  Data riformattata: 20190228    
+
+call cvalfa2dat parm('20190228' 'YYYYMMDD' 'DD/MM/YYYY')
+DSPLY  Data input: 20190228                             
+DSPLY  Formato input: YYYYMMDD                          
+DSPLY  Data output: 2019-02-28                          
+DSPLY  Formato output: DD/MM/YYYY                       
+DSPLY  Data riformattata: 28/02/2019                    
+
+call cvalfa2dat parm('20191232' 'YYYYMMDD' 'DDMMYY')
+Il valore relativo al giorno non è valido.          
+DSPLY  CEEDAYS: errore 202                          
+
+call cvalfa2dat parm('20191321' 'YYYYMMDD' 'DDMMYY')
+Il valore relativo al mese non è valido.            
+DSPLY  CEEDAYS: errore 202                          
+
+call cvalfa2dat parm('1191221' 'CYYMMDD' 'DDMMYY') 
+DSPLY  Data input: 20191221                        
+DSPLY  Formato input: YYYYMMDD                     
+DSPLY  Data output: 2019-12-21                     
+DSPLY  Formato output: DDMMYY                      
+DSPLY  Data riformattata: 211219                   
+
+call cvalfa2dat parm('1191221' 'CYYMMDD' 'DDMMCYY')
+DSPLY  Data input: 20191221                        
+DSPLY  Formato input: YYYYMMDD                     
+DSPLY  Data output: 2019-12-21                     
+DSPLY  Formato output: DDMMYYYY                    
+DSPLY  Data riformattata: 21122019    
+
+call cvalfa2dat parm('28/02/19' 'DD/MM/YY' 'MMYYYY')
+DSPLY  Data input: 28/02/19                         
+DSPLY  Formato input: DD/MM/YY                      
+DSPLY  Data output: 2019-02-28                      
+DSPLY  Formato output: MMYYYY                       
+DSPLY  Data riformattata: 022019                                 
