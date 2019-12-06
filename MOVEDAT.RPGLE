@@ -11,6 +11,7 @@
                datfmt(*YMD-) timfmt(*ISO);
 
        dcl-s Date1 date(*MDY/) inz(D'02-10-22');
+	   dcl-s Date2 date(*ISO) inz(D'02-10-22');
        dcl-s Time1 time(*EUR) inz(T'13.00.00');
        dcl-s Chardate char(8) inz('03-10-22');
        dcl-s DataUSA date(*USA);
@@ -28,7 +29,7 @@
      C     *YMD-         MOVE      CharDate      DataUSA
       ***DateUSA = '10/22/2003'
 
-     C*                  MOVEL     DateHire      CharDate
+     C*                  MOVEL     Date2         CharDate
       *** Errore in compilazione: Chardate è troppo piccolo
 
        *inlr = *on; 
