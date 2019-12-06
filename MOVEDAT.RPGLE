@@ -11,7 +11,7 @@
                datfmt(*YMD-) timfmt(*ISO);
 
        dcl-s Date1 date(*MDY/) inz(D'02-10-22');
-	   dcl-s Date2 date(*ISO) inz(D'02-10-22');
+       dcl-s Date2 date(*ISO) inz(D'02-10-22');
        dcl-s Time1 time(*EUR) inz(T'13.00.00');
        dcl-s Chardate char(8) inz('03-10-22');
        dcl-s DataUSA date(*USA);
